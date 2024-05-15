@@ -1,0 +1,530 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.firstContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100dvh;
+  padding: 0 150px;
+  background-color: rgb(29, 26, 26);
+  color: white;
+}
+
+.firstContainerImage {
+  width: 30%;
+}
+
+.firstContainerImage img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.fullContent {
+  width: 40%;
+}
+
+.firstTitle {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  font-family: 'Dream Avenue', sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.yellowDivider {
+  position: relative;
+}
+
+.yellowDivider:after {
+  content: "";
+  width: 40px;
+  height: 8px;
+  top: -10px;
+  position: absolute;
+  background-color: rgb(240, 204, 0);
+}
+
+.redDivider {
+  position: relative;
+}
+
+.redDivider:after {
+  content: "";
+  width: 40px;
+  height: 8px;
+  top: 70px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  background-color: #E32652;
+}
+
+.divider {
+  position: relative;
+}
+
+.divider:after {
+  content: "";
+  width: 200px;
+  position: absolute;
+  height: 1px;
+  top: -15px;
+  background-color: white;
+}
+
+.textContainer {
+  font-size: 1.2rem;
+  padding: 25px 0;
+  line-height: 1.5;
+}
+
+.textContainer p {
+  font-family: "PT Serif", sans-serif;
+  font-weight: bold;
+}
+
+.textContainer p > strong {
+  color: rgb(240, 204, 0);
+}
+
+.dateContainer {
+  display: flex;
+  gap: 10px;
+  font-size: 1.3rem;
+  padding: 25px;
+  margin: 10px 0 40px 0;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+
+.dateContainer i {
+  color: rgb(240, 204, 0);
+}
+
+.dateContainer p > strong {
+  color: rgb(240, 204, 0);
+}
+
+.emailContainer {
+  padding-top: 40px;
+}
+
+.emailContainer p {
+  font-size: 1.4rem;
+  font-weight: lighter;
+  padding-bottom: 20px;
+}
+
+.emailContainer form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.emailContainer form > input {
+  background: rgba(121, 121, 121, 0.582);
+  border: none;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+.emailContainer form > input::placeholder {
+  font-size: 1.4rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+.emailContainer form > input:focus {
+  outline: 0;
+}
+
+.emailContainer form > button {
+  border: none;
+  color: white;
+  border-radius: 5px;
+  padding: 25px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.2s;
+  background: rgb(197, 168, 0);
+}
+
+.emailContainer form > button:hover {
+  background: rgb(240, 204, 0);
+  transition: background 0.2s;
+}
+
+/* secondContainer */
+
+.secondContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+  width: 100%;
+  padding: 80px 150px 200px 150px;
+  background-color: #d6cfc8;
+  color: black;
+}
+
+.secondTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.textSecondContainer p {
+  font-family:'Roboto', Courier, monospace;
+  font-size: 1.25rem;
+  text-align: center;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.textSecondContainerBold {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Third Section */
+
+.thirdContainer {
+  background-color: rgb(29, 26, 26);
+  color: white;
+  padding: 150px 150px;
+}
+
+.thirdContainer h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 80px;
+}
+
+.textThirdContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.textThirdContainer p {
+  font-size: 1.3rem;
+  font-family: "PT Serif", sans-serif;
+  line-height: 1.5;
+}
+
+.textThirdContainer p > strong {
+  color: rgb(240, 204, 0);
+}
+
+.buttonThirdContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.buttonThirdContainer a {
+  text-decoration: none;
+  color: white;
+  padding: 30px;
+  background-color: rgb(194, 165, 0);
+  border-radius: 10px;
+  transition: background 0.2s;
+}
+
+.buttonThirdContainer a:hover {
+  background-color: rgb(215, 183, 0);
+}
+
+/* FOUR CONTAINER */
+
+.fourContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 150px 50px 150px;
+}
+
+
+.fourTitleContainer {
+  text-align: center;
+  padding: 80px 40px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.fourImgContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fourImgContainer img {
+  width: 50%;
+  height: 800px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.fourTextContainer {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 100px 50px 100px;
+  gap: 20px;
+}
+
+.fourTextContainer p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+}
+
+.fourTextBold {
+  font-weight: bold;
+}
+
+/*Five Container */
+
+.fiveContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 80px 150px 100px 150px;
+  background: rgb(29,26,26);
+  background: linear-gradient(220deg, rgba(29,26,26,1) 55%, rgba(39,38,38,1) 90%, rgb(48, 47, 47) 100%);
+}
+
+.fiveTitleContainer h4 {
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+.fiveTextContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 50px;
+}
+
+.titleFiveText {
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  background-color: rgb(194, 165, 0);
+  padding: 15px;
+  text-align: start;
+  border-radius: 5px;
+}
+
+.textItem {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.textItem p {
+  font-size: 1.1rem;
+}
+
+/* Six Container */
+
+.sixContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sixTitleContainer {
+  width: 100%;
+  position: relative;
+}
+
+.sixTitleContainer img {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 50px; 
+  object-fit: cover;
+}
+
+.sixTitleContainer h5 {
+  position: absolute;
+  font-size: 4rem;
+  top: 45%;
+  left: 44%;
+  color: white;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px; 
+  margin: auto;
+  transform: translateY(-50%);
+}
+
+.sixContentContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 0px 150px 0px;
+}
+
+.ctaSix {
+  font-size: 1.3rem;
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+
+.sixVantageContainer {
+  display: flex;
+  padding: 50px 200px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sixVantageContainer span {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.sixVantageContainer ul li {
+  font-size: 1.4rem;
+  padding-top: 30px;
+}
+
+.btnSixContainer {
+  margin-top: 60px;
+}
+
+.btnSixContainer a {
+  color: white;
+  background-color: rgb(156, 156, 0);
+  text-decoration: none;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.btnSixContainer a:hover {
+  background-color: rgb(168, 168, 0);
+}
+
+
+@media (max-width: 1050px) {
+  .firstContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+  }
+  .firstTitle {
+    margin: 30px 0px 0px 0px;
+    font-size: 3rem;
+  }
+  .firstContainerImage {
+    display: none;
+  }
+  .divider {
+    display: none;
+  }
+  .fullContent {
+    width: 100%;
+    padding: 50px;
+  }
+
+  /* Second Container */
+  .secondContainer {
+    padding: 50px;
+  }
+
+  .textSecondContainerBold {
+    text-align: center;
+  }
+
+  .redDivider {
+    top: -70px;
+  }
+
+  /* Third Container */
+  .thirdContainer {
+    padding: 50px;
+  }
+
+  .thirdContainer h3 {
+    text-align: start;
+  }
+
+  .buttonThirdContainer {
+    text-align: center;
+  }
+
+  /* Four container */
+  .fourContainer {
+    padding: 50px;
+  }
+
+  .fourTitleContainer {
+    padding: 50px 0 50px 0;
+  }
+
+  .fourImgContainer img {
+    width: 100%;
+  }
+
+  .fourTextContainer {
+    padding: 0px;
+    margin-top: 50px;
+    gap: 40px;
+  }
+
+  /* FiveContainer */
+  .fiveContainer {
+    padding: 50px;
+  }
+
+  .fiveTextContainer {
+    padding: 0px;
+    gap: 70px;
+    margin-top: 40px;
+  }
+
+  /* SixContainer */
+  .sixContainer {
+    padding: 0px 0px 150px 0px;
+  }
+  .sixTitleContainer h5 {
+    font-size: 3.5rem;
+    top: 45%;
+    left: 30%;
+  }
+  .ctaSix {
+    padding: 20px 50px;
+    text-align: center;
+  }
+  .sixVantageContainer {
+    padding: 50px;
+  }
+}
