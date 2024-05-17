@@ -125,35 +125,13 @@ img {
   padding-bottom: 20px;
 }
 
-.emailContainer form {
+.emailContainer  {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
 
-.emailContainer form > input {
-  background: rgba(121, 121, 121, 0.582);
-  border: none;
-  border-radius: 5px;
-  padding: 20px;
-  margin-bottom: 10px;
-  font-size: 1.2rem;
-  color: white;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-}
-
-.emailContainer form > input::placeholder {
-  font-size: 1.4rem;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-}
-
-.emailContainer form > input:focus {
-  outline: 0;
-}
-
-.emailContainer form > button {
+.emailContainer a {
   border: none;
   color: white;
   border-radius: 5px;
@@ -163,9 +141,10 @@ img {
   font-size: 1rem;
   transition: background 0.2s;
   background: rgb(197, 168, 0);
+  text-decoration: none;
 }
 
-.emailContainer form > button:hover {
+.emailContainer a:hover {
   background: rgb(240, 204, 0);
   transition: background 0.2s;
 }
@@ -392,6 +371,13 @@ img {
   padding: 0px 0px 150px 0px;
 }
 
+.ctaSix1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: red;
+  margin-bottom: 50px;
+}
+
 .ctaSix {
   font-size: 1.3rem;
   margin-bottom: 50px;
@@ -422,16 +408,111 @@ img {
 }
 
 .btnSixContainer a {
+  font-size: 1.4rem;
   color: white;
-  background-color: rgb(156, 156, 0);
+  background-color: rgb(197, 168, 0);
   text-decoration: none;
   padding: 40px;
   border-radius: 20px;
 }
 
 .btnSixContainer a:hover {
-  background-color: rgb(168, 168, 0);
+  background-color: rgb(190, 157, 11);
 }
+
+/* SevenContainer */
+
+.sevenContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 150px;
+  background-color: rgb(29, 26, 26);
+  color: white;
+}
+
+.sevenContainer h5 {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 50px;
+}
+
+.sevenContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sevenContainerText {
+  font-size: 2rem;
+  margin-top: 20px;
+  line-height: 2;
+  text-align: center;
+}
+
+.sevenContainerText strong {
+  text-decoration: line-through;
+}
+
+.sevenContent span {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Eight Container */
+.eightContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.eightText {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.eightText i {
+  padding-right: 10px;
+}
+
+.eightText p {
+  text-align: start;
+  padding: 5px 0 5px 0;
+  font-size: 1.5rem;
+}
+
+.eightContainer h5 {
+  font-size: 2.5rem;
+  padding-top: 100px;
+} 
+
+.btnEightContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.btnEightContainer a {
+  color: white;
+  background-color: rgb(0, 131, 178);
+  padding: 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  width: 50%;
+  text-align: center;
+  transition: background .2s;
+}
+
+.btnEightContainer a:hover {
+  background-color: rgb(2, 188, 255);
+  transition: background .2s;
+}
+
 
 
 @media (max-width: 1050px) {
@@ -522,9 +603,37 @@ img {
   }
   .ctaSix {
     padding: 20px 50px;
+    margin-bottom: 5px;
     text-align: center;
   }
   .sixVantageContainer {
     padding: 50px;
+  }
+  /* SevenContainer */
+  .sevenContainer {
+    padding: 50px 50px 300px 50px;
+  }
+  .sevenContainer h5 {
+    font-size: 2.5rem;
+  }
+  .sevenContainer span {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  .sevenContainerText {
+    font-size: 1.7rem;
+  }
+
+  .eightContainer {
+    text-align: center;
+  }
+
+  .btnEightContainer {
+    width: 100%;
+  }
+
+  .btnEightContainer a {
+    width: 100%;
+    font-size: 1.3rem;
   }
 }
